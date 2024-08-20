@@ -1,34 +1,27 @@
 import "bootstrap/dist/css/bootstrap.css";
-import Login from "./Components/Login";
-import { useState } from "react";
-import RegistrationPage from "./Components/Pages/RegistrationPage";
-import { MyContext } from "./ContextApi/Context";
+import Login from "./LoginRegistarationComponents/Login";
+import RegistrationPage from "./Pages/RegistrationPage";
+import StudentDashboardPage from "./Pages/StudentDashboardPage";
+import { BrowserRouter as Router, Route, Routes }from "react-router-dom";
 function App() {
-  const [pageName, setPageName]=useState("Login")
-
-
-  const changePageHandeler=(e)=>{
-    setPageName(e)
-  }
+/*   const [pageName, setPageName] = useState("Login");
+  const changePageHandeler = (e) => {
+    setPageName(e);
+  }; */
   return (
     <>
-    
-    <MyContext.Provider value={{ changePageHandeler,pageName }}>
-    {pageName == "Login"? 
-         <Login  />:
-         <RegistrationPage/>
-        
-        }
-    </MyContext.Provider>
-       
-    
-     {/*  <Head />
-      <Navbar /> */}
-    {/*   <Login /> */}
-     {/*  <Register /> */}
-      {/* <Profile/> */}
-     {/*  <CoursesRegistration/> */}
-      
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/dashboard" element={<StudentDashboardPage />} />
+          <Route path="/Registration" element={<RegistrationPage />} />
+        </Routes>
+      </Router>
+
+
+
+
+     {/*   <StudentDashboardPage /> */}
     </>
   );
 }
