@@ -38,8 +38,8 @@ function Login() {
                   placeholder="Enter Email Address"
                   className=" mt-1  text-gray-700 font-weight-normal login-input"
                   autoFocus
-                 /*  autoComplete="on"
-                  required */
+                  autoComplete="on"
+                  required
                  
                 />
               </div>
@@ -51,7 +51,7 @@ function Login() {
                   placeholder="Enter Password"
                   minLength="6"
                   className=" mt-1   text-gray-700 font-weight-normal login-input"
-               /*    required */
+                  required
                 />
               </div>
 

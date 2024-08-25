@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate} from 'react-router-dom';
 
 function Profile({changeFormHandeler}) {
+  const navigate = useNavigate();
+  const navigatetocourse = () => {
+  
+    navigate('/Courses');
+    
+  };
   return (
     <section className="d-flex login-page flex-column flex-md-row p-3 align-items-center justify-content-center">
     <div className="  w-100 w-md-50 w-lg-25 rounded-lg min-vh-95 px-3 d-flex align-items-center justify-content-center">
@@ -76,8 +83,8 @@ function Profile({changeFormHandeler}) {
 
     
 
-            <button type="submit" className="btns btn-login mt-4 fs-6" onClick={()=>changeFormHandeler("2")}>
-           Save & Next
+            <button type="submit" className="btns btn-login mt-4 fs-5" onClick={navigatetocourse}>
+            Register Now
             </button>
           </form>
           <hr className="my-4" />

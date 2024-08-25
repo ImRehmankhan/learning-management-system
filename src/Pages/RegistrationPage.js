@@ -1,34 +1,20 @@
-import React, { useState } from 'react'
-import Register from '../LoginRegistarationComponents/Register'
-import Head from '../LoginRegistarationComponents/Head'
-import Navbar from '../LoginRegistarationComponents/Navbar'
-import Profile from '../LoginRegistarationComponents/Profile'
-import CoursesRegistation from '../LoginRegistarationComponents/CoursesRegistration'
+import React, { useContext, useState } from "react";
+import Register from "../LoginRegistarationComponents/Register";
+import Head from "../LoginRegistarationComponents/Head";
+import Navbar from "../LoginRegistarationComponents/Navbar";
+import Profile from "../LoginRegistarationComponents/Profile";
+import { MyContext } from "../ContextApi/Context";
 
 function RegistrationPage() {
-  
-  const [pageName, setPageName]=useState("0")
 
-
-  const changeFormHandeler=(e)=>{
-    setPageName(e)
-  }
-      
+  const { pageName } = useContext(MyContext);
   return (
     <>
-    <Head/>
-    <Navbar/>
-    {
-      pageName === "0" ? (
-        <Register changeFormHandeler={changeFormHandeler} />
-      ) : pageName === "1" ? (
-        <Profile changeFormHandeler={changeFormHandeler} />
-      ) : (
-        <CoursesRegistation changeFormHandeler={changeFormHandeler}/>
-      )
-    }
+      <Head />
+      <Navbar />
+      {pageName === "0" ? <Register /> : <Profile />}
     </>
-  )
+  );
 }
 
-export default RegistrationPage
+export default RegistrationPage;

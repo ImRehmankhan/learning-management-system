@@ -31,7 +31,7 @@ function Snavbar() {
           </div>
          
           <nav
-            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+            class="navbar navbar-header  navbar-header-transparent navbar-expand-lg border-bottom"
           >
             <div class="container-fluid">
               <nav
@@ -278,6 +278,7 @@ function Snavbar() {
               </ul>
             </div>
           </nav>
+          
           
         </div>
       </div>

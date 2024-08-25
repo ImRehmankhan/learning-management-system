@@ -91,7 +91,7 @@
   background-color: rgb(255, 255, 255);
   font-size: 14px;
   padding: 15px 20px;
-  color: rgb(151, 7, 7);
+  color: rgb(49, 49, 49);
   border: 1px solid rgb(221, 221, 221);
   border-radius: 5px;
 }
@@ -135,7 +135,18 @@
 .course-btn:hover{
   background: rgb(6, 33, 167) ;
 }
-
+.btn-applyforcourses{
+  font-size: x-small;
+}
+.btn-applyforcourses:hover{
+color:white
+}
+@media only screen and (max-width:772px)  {
+  .marginonsmallscree{
+    margin: 0 20px !important;
+  }
+  
+}
 
 /* ============================================================================================ */
 /*NavBar Registration

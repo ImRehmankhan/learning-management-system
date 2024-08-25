@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { useNavigate} from 'react-router-dom';
+import {MyContext} from '../ContextApi/Context'
 function Register({changeFormHandeler}) {
+  const{changePageHandeler}= useContext(MyContext)
   const navigate = useNavigate();
   const movetologin = () => {
     navigate('/');
@@ -10,7 +12,7 @@ function Register({changeFormHandeler}) {
       <div className="  w-100 w-md-50 w-lg-25 rounded-lg min-vh-95 px-3 d-flex align-items-center justify-content-center">
         <div className="col-xl-4  col-xxl-3  col-lg-5 col-sm-12 col-md-6 login-row p-3 ">
           <div className="w-100  d-flex align-items-center justify-content-center flex-column">
-            <h1 className="h5 h-md-4 font-weight-bold text-center mt-0">
+            <h1 className="h5 h-md-4 font-weight-bold text-center mt-0 fs-5">
             Registration
             </h1>
           
@@ -79,8 +81,9 @@ function Register({changeFormHandeler}) {
 
       
 
-              <button type="submit" className="btns btn-login mt-4 fs-5" onClick={()=>changeFormHandeler("1")}>
-              Register Now
+              <button type="submit" className="btns btn-login mt-4 fs-5" onClick={()=>changePageHandeler("1")}>
+             
+              Save & Next
               </button>
             </form>
             <hr className="my-4" />

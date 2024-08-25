@@ -40,7 +40,7 @@ function Navbar() {
             <a class="nav-link   nav-text-color" href="#" tabindex="-1" aria-disabled="true">Events</a>
           </li>
         </ul>
-        <button class="apply-btn btns">Apply Now</button>
+        <button class="apply-btn btns">Enroll Now</button>
       </div>
     </div>
   </nav>
