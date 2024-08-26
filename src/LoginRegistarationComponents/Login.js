@@ -32,7 +32,7 @@ function Login() {
         
             <form className="mt-3" >
               <div className="htmlForm-group">
-                <label className="text-gray-700 font-weight-normal ms-1 ">Email</label>
+                <label className="text-gray-700 font-weight-bold ms-1 ">Email</label>
                 <input
                   type="email"
                   placeholder="Enter Email Address"
@@ -45,7 +45,7 @@ function Login() {
               </div>
 
               <div className="htmlForm-group mt-4">
-                <label className="text-gray-700 font-weight-normal ms-1">Password</label>
+                <label className="text-gray-700 font-weight-bold ms-1">Password</label>
                 <input
                   type="password"
                   placeholder="Enter Password"

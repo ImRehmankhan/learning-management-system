@@ -8,20 +8,20 @@ function Head() {
         <div className="row  adjust-padding">
           <div className="col-lg-9 mt-lg-3  col-md-9 bar-left ">
             <ul className="list-unstyled list-inline">
-              <li className="list-inline-item">
+              <li className="list-inline-item me-lg-5">
             
                 <span>
-                  <a href="tel:+92034321118">0303-4321118</a> |{" "}
+                  <i className="fa fa-phone fs-5 me-1"></i>  <a href="tel:+92034321118">0303-4321118</a> |{" "}
                   <a href="tel:+92184321118">0323-1230488</a>
                 </span>
               </li>
-              <li className="list-inline-item">
+              <li className="list-inline-item me-lg-5">
                 <span>
-                  <a href="#">support@Itsolera.org</a>
+                <i className="fa fa-envelope fs-5 me-1"></i>   <a href="#">support@Itsolera.org</a>
                 </span>
               </li>
               <li className="list-inline-item">
-                <a href="">General Head Office, G-12/1,Islamabad, Pakistan</a>
+              <i className="fas fa-map-marker-alt fs-5 me-1"></i> <a href="">General Head Office, G-12/1,Islamabad, Pakistan</a>
               </li>
             </ul>
           </div>

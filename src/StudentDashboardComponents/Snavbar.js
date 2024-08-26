@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Snavbar() {
+  const navigate = useNavigate();
+  const  navigatetoprofile = () => {
+  
+    navigate('/profile');
+    
+  };
   return (
   <>
   <div class="main-panel">
@@ -261,14 +268,14 @@ function Snavbar() {
                             <a
                               href=""
                               class="btns btn-login  btn-view-profile"
+                              onClick={navigatetoprofile}
                               >View Profile</a
                             >
                           </div>
                         </div>
                       </li>
                       <li>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">My Profile</a>
+                       
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="">Logout</a>
                       </li>

@@ -13,6 +13,7 @@ import PageNotFound from "./LoginRegistarationComponents/PageNotFound";
 import ShowProfileDetails from "./UserProfile/ShowProfileDetails";
 import CoursesRegistration from "./CoursesComponents/CoursesRegistration";
 import PaymentForm from "./CoursesComponents/PaymentForm";
+import MyCourses from "./StudentDashboardComponents/MyCourses";
 
 
 
@@ -37,7 +38,7 @@ function App() {
 
 
 
-
+          <Route path="/Mycourses" element={ <MyCourses/>} />
           
           <Route path="/Payment" element={ <PaymentPage/>} />
           <Route path="/Profile" element={ <ShowProfileDetails/>} />

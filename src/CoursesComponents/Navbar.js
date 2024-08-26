@@ -6,7 +6,7 @@ function Navbar() {
   const navigate = useNavigate();
   const  navigatetoprofile = () => {
   
-    navigate('/profile');
+   ;
     
   };
   return (
@@ -195,12 +195,9 @@ function Navbar() {
                 </div>
               </li>
               <li>
+                
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">
-                  My Profile
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">
+                <a class="dropdown-item" href="" onClick={ ()=>navigate('/')}> 
                   Logout
                 </a>
               </li>

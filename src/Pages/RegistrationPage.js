@@ -7,21 +7,20 @@ import { MyContext } from "../ContextApi/Context";
 import Footer from "../LoginRegistarationComponents/Footer";
 import RegisterOption from "../LoginRegistarationComponents/RegisterOption";
 
-
 function RegistrationPage() {
-
   const { pageName } = useContext(MyContext);
   return (
     <>
       <Head />
       <Navbar />
-      if
-      {
-  pageName === '0' ? <RegisterOption /> :
-  pageName === '1' ? <Register /> :
-  <Profile />
-}
-      <Footer/>
+      {pageName === "0" ? (
+        <RegisterOption />
+      ) : pageName === "1" ? (
+        <Register />
+      ) : (
+        <Profile />
+      )}
+      <Footer />
     </>
   );
 }

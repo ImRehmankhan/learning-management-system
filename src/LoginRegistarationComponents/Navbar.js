@@ -13,31 +13,31 @@ function Navbar() {
       <div class="collapse navbar-collapse ms-5 " id="navbarsExample07XL">
         <ul class="navbar-nav me-auto mb-2  mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link  nav-text-color " aria-current="page" href="#">Home</a>
+            <a class="nav-link  nav-text-color  fs-5"    aria-current="page" href="">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  nav-text-color" href="#" >About</a>
+            <a class="nav-link  nav-text-color fs-5" href="" >About</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link   nav-text-color" href="#" tabindex="-1" aria-disabled="true">Info Desk</a>
+            <a class="nav-link   nav-text-color fs-5" href="" tabindex="-1" aria-disabled="true">Info Desk</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle  nav-text-color" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+            <a class="nav-link dropdown-toggle  nav-text-color fs-5" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
-              <li><a class="dropdown-item" href="#">Online Courses</a></li>
-              <li><a class="dropdown-item" href="#">Onsite Courses</a></li>
+              <li><a class="dropdown-item nav-text-color" href="#">Online Courses</a></li>
+              <li><a class="dropdown-item nav-text-color" href="#">Onsite Courses</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle  nav-text-color" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">Opportunities</a>
+            <a class="nav-link dropdown-toggle  nav-text-color fs-5" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">Opportunities</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
-              <li><a class="dropdown-item" href="#">Scholarships</a></li>
-              <li><a class="dropdown-item" href="#">Internships</a></li>
+              <li><a class="dropdown-item nav-text-color" href="#">Scholarships</a></li>
+              <li><a class="dropdown-item nav-text-color" href="#">Internships</a></li>
            
             </ul>
           </li>
            <li class="nav-item ">
-            <a class="nav-link   nav-text-color" href="#" tabindex="-1" aria-disabled="true">Events</a>
+            <a class="nav-link   nav-text-color fs-5" href="#" tabindex="-1" aria-disabled="true">Events</a>
           </li>
         </ul>
         <button class="apply-btn btns">Enroll Now</button>

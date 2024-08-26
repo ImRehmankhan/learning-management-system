@@ -28,7 +28,7 @@ function Profile({changeFormHandeler}) {
       
           <form className="mt-3" action="#" method="POST">
           <div className="htmlForm-group">
-              <label className="text-gray-700 font-weight-normal ms-1 ">CNIC</label>
+              <label className="text-gray-700 font-weight-bold ms-1 ">CNIC</label>
               <input
                 type="text"
                 placeholder="Enter Your CNIC"
@@ -40,7 +40,7 @@ function Profile({changeFormHandeler}) {
               />
             </div>
             <div className="htmlForm-group mt-4">
-              <label className="text-gray-700 font-weight-normal ms-1 ">Qualification</label>
+              <label className="text-gray-700 font-weight-bold ms-1 ">Qualification</label>
               <input
                 type="text"
                 placeholder="Enter Qualification"
@@ -52,7 +52,7 @@ function Profile({changeFormHandeler}) {
               />
             </div>
             <div className="htmlForm-group mt-4">
-              <label className="text-gray-700 font-weight-normal ms-1 ">Whatsapp Number</label>
+              <label className="text-gray-700 font-weight-bold ms-1 ">Whatsapp Number</label>
               <input
                 type="text"
                 placeholder="Enter Whatsapp Number"
@@ -65,7 +65,7 @@ function Profile({changeFormHandeler}) {
             </div>
             
             <div className="htmlForm-group mt-4">
-              <label className="text-gray-700 font-weight-normal ms-1">City</label>
+              <label className="text-gray-700 font-weight-bold ms-1">City</label>
               <input
                 type="text"
                 placeholder="Enter city"
@@ -75,7 +75,7 @@ function Profile({changeFormHandeler}) {
               />
             </div>
             <div className="htmlForm-group mt-4">
-              <label className="text-gray-700 font-weight-normal ms-1">Address</label>
+              <label className="text-gray-700 font-weight-bold ms-1">Address</label>
               <input
                 type="text"
                 placeholder="Enter Your Address"

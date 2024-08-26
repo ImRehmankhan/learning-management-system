@@ -8,9 +8,6 @@ function RegisterOption() {
         setSelectedRadio(e)
     }
     const navigate = useNavigate();
-    const movetologin = () => {
-      navigate('/');
-    };
   return (
 <div class="container  ">
   <div class="row justify-content-center   ">
@@ -23,7 +20,7 @@ function RegisterOption() {
           <fieldset>
             <div class="row justify-content-center">
               <div class="col-12 col-md-5 mb-4 ">
-                <div class="card h-100 border-primary" onClick={()=>SelectedTab("Teacher")}>
+                <div class="card h-100 register-option-bar-border-hover" onClick={()=>SelectedTab("Teacher")}>
                   <div class="card-body text-center">
                     <input
                       type="radio"
@@ -69,7 +66,7 @@ function RegisterOption() {
                 </div>
               </div>
               <div class="col-12 col-md-5 mb-4  ">
-                <div class="card h-100 border-secondary " onClick={()=>SelectedTab("Student")}>
+                <div class="card h-100  register-option-bar-border-hover" onClick={()=>SelectedTab("Student")}>
                   <div class="card-body text-center">
                     <input
                       type="radio"
@@ -130,7 +127,7 @@ function RegisterOption() {
           >
             Join as a { SelectedRadio}
           </button>
-          <p class="text-center mt-4 mb-5" onClick={movetologin}>
+          <p class="text-center mt-4 mb-5" onClick={()=>navigate('/')}>
             Already have an account?
             <a href="" class="text-primary ms-1"  >
               LogIn Here

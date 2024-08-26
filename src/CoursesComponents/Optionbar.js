@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function Optionbar() {
+  const navigate=useNavigate()
   return (
     <nav
       className="navbar navbar-registration navbar-expand-lg navbar-dark bg-light d-flex align-item-center justify-content-center"
@@ -28,13 +31,14 @@ function Optionbar() {
         <div className="collapse navbar-collapse ms-5" id="navbarsExample07XL">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0  d-lg-flex align-items-lg-center justify-content-lg-end w-100">
             <li className="nav-item">
-              <a
-                className="nav-link nav-text-color"
+            <a
+                className="nav-link nav-text-color   ms-lg-5 "
                 aria-current="page"
                 href=""
-                style={{ "font-size": 20 + "px" }}
+                style={{ "font-size": "20px", "width":"200px" }}
+                onClick={()=>navigate('/Mycourses')}
               >
-                <i className=" fa fa-book"></i> My Courses
+                <i className=" fa fa-book fs-4 "></i>{" "}My Courses
               </a>
             </li>
           </ul>
