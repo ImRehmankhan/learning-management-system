@@ -29,7 +29,7 @@ function Head() {
               <ul className="list-unstyled list-inline bar-social">
                 <li className="list-inline-item  ">
                   <a href="#" rel="noopener noreferrer" className=" head-icon p-1">
-                  <i class="fab fa-facebook-f"></i>
+                  <i class="fa fa-youtube"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">

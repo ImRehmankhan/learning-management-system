@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { useNavigate} from 'react-router-dom';
 import {MyContext} from '../ContextApi/Context'
+import HeaderBanner from '../UserProfile/HeaderBanner'
 function Register({changeFormHandeler}) {
   const{changePageHandeler}= useContext(MyContext)
   const navigate = useNavigate();
@@ -8,6 +9,8 @@ function Register({changeFormHandeler}) {
     navigate('/');
   };
   return (
+    <>
+    <HeaderBanner value={" Registration"}/>
     <section className="d-flex login-page flex-column flex-md-row p-3 align-items-center justify-content-center">
       <div className="  w-100 w-md-50 w-lg-25 rounded-lg min-vh-95 px-3 d-flex align-items-center justify-content-center">
         <div className="col-xl-4  col-xxl-3  col-lg-5 col-sm-12 col-md-6 login-row p-3 ">
@@ -81,7 +84,7 @@ function Register({changeFormHandeler}) {
 
       
 
-              <button type="submit" className="btns btn-login mt-4 fs-5" onClick={()=>changePageHandeler("1")}>
+              <button type="submit" className="btns btn-login mt-4 fs-5" onClick={()=>changePageHandeler("2")}>
              
               Save & Next
               </button>
@@ -101,6 +104,7 @@ function Register({changeFormHandeler}) {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

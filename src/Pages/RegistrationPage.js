@@ -4,6 +4,9 @@ import Head from "../LoginRegistarationComponents/Head";
 import Navbar from "../LoginRegistarationComponents/Navbar";
 import Profile from "../LoginRegistarationComponents/Profile";
 import { MyContext } from "../ContextApi/Context";
+import Footer from "../LoginRegistarationComponents/Footer";
+import RegisterOption from "../LoginRegistarationComponents/RegisterOption";
+
 
 function RegistrationPage() {
 
@@ -12,7 +15,13 @@ function RegistrationPage() {
     <>
       <Head />
       <Navbar />
-      {pageName === "0" ? <Register /> : <Profile />}
+      if
+      {
+  pageName === '0' ? <RegisterOption /> :
+  pageName === '1' ? <Register /> :
+  <Profile />
+}
+      <Footer/>
     </>
   );
 }

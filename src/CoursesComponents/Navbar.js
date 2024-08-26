@@ -1,47 +1,21 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+ 
+  const navigate = useNavigate();
+  const  navigatetoprofile = () => {
+  
+    navigate('/profile');
+    
+  };
   return (
     <nav class="navbar navbar-header course-navbar-header course-nav-bg navbar-header-transparent navbar-expand-lg border-bottom">
-    <div class="container">
-      <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none course-search-height d-lg-flex">
-        <div class="input-group course-search-height">
-          <div class="input-group-prepend">
-            <button type="submit" class="btn btn-search pe-1">
-              <i class="fa fa-search search-icon"></i>
-            </button>
-          </div>
-          <input type="text" placeholder="Search Courses ...." class="form-control" />
-        </div>
-       
-      </nav>
-      
-
-      <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+    <div class="container ">
+ 
+      <ul class="navbar-nav topbar-nav ms-md-auto align-items-center ">
         
-        <li class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none">
-          <a
-            class="nav-link dropdown-toggle"
-            data-bs-toggle="dropdown"
-            href=""
-            role="button"
-            aria-expanded="false"
-            aria-haspopup="true"
-          >
-            <i class="fa fa-search"></i>
-          </a>
-          <ul class="dropdown-menu dropdown-search animated fadeIn">
-            <form class="navbar-left navbar-form nav-search">
-              <div class="input-group">
-                <input
-                  type="text"
-                  placeholder="Search ..."
-                  class="form-control"
-                />
-              </div>
-            </form>
-          </ul>
-        </li>
+      
         <li class="nav-item topbar-icon dropdown hidden-caret">
           <a
             class="nav-link dropdown-toggle"
@@ -214,7 +188,7 @@ function Navbar() {
                   <div class="u-text">
                     <h4>Rehman</h4>
                     <p class="text-muted">hello@example.com</p>
-                    <a href="" class="btns btn-login  btn-view-profile">
+                    <a href="" class="btns btn-login  btn-view-profile" onClick={navigatetoprofile}>
                       View Profile
                     </a>
                   </div>

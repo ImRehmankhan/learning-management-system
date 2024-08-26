@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate} from 'react-router-dom';
+import HeaderBanner from '../UserProfile/HeaderBanner'
 
 function Profile({changeFormHandeler}) {
   const navigate = useNavigate();
@@ -9,6 +10,9 @@ function Profile({changeFormHandeler}) {
     
   };
   return (
+    <>
+    <HeaderBanner value={"Profile Registration"}/>
+   
     <section className="d-flex login-page flex-column flex-md-row p-3 align-items-center justify-content-center">
     <div className="  w-100 w-md-50 w-lg-25 rounded-lg min-vh-95 px-3 d-flex align-items-center justify-content-center">
       <div className="col-xl-4  col-xxl-3  col-lg-5 col-sm-12 col-md-6 login-row p-3 ">
@@ -97,6 +101,7 @@ function Profile({changeFormHandeler}) {
       </div>
     </div>
   </section>
+  </>
   )
 }
 

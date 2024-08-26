@@ -3,11 +3,11 @@ import {course} from './CourseList'
 import {  useNavigate } from "react-router-dom";
 function CourseCard() {
   const navigate = useNavigate();
-  const handlepayment = () => {
-  
-    navigate('/Payment');
+  const handlePayment = (courseDetails) => {
+    navigate('/payment', { state: { courseDetails } });
     
   };
+
   return (
     <>
       {course.map((e, index) => (
@@ -24,7 +24,7 @@ function CourseCard() {
           <div class="card-body">
             <h6 class="card-title fs-6">{e.course_name}</h6>
             <p class="card-text">{`$/${e.price}`}</p> 
-          <a href="" class="apply-btn btns btn-applyforcourses"  onClick={handlepayment}> 
+          <a href="" class="apply-btn btns btn-applyforcourses"  onClick={()=>handlePayment(e)}> 
               Enroll Now
             </a>
           
