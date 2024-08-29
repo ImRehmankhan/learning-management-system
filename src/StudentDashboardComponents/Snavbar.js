@@ -1,26 +1,23 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate,Link } from "react-router-dom";
+
 
 function Snavbar() {
   const navigate = useNavigate();
-  const  navigatetoprofile = () => {
-  
-    navigate('/profile');
-    
-  };
+
   return (
-  <>
-  <div class="main-panel">
+    <>
+      <div class="main-panel">
         <div class="main-header ">
           <div class="main-header-logo">
-          
             <div class="logo-header" data-background-color="dark">
               <a href="" class="logo">
-              <img
-                src="https://itsolera.com/wp-content/uploads/2024/05/IT-Solera-LOGO.png"
-                alt="navbar brand"
-                className="navbar-brand"
-               width="200"/>
+                <img
+                  src="https://itsolera.com/wp-content/uploads/2024/05/IT-Solera-LOGO.png"
+                  alt="navbar brand"
+                  className="navbar-brand"
+                  width="200"
+                />
               </a>
               <div class="nav-toggle">
                 <button class="btn btn-toggle toggle-sidebar">
@@ -34,23 +31,14 @@ function Snavbar() {
                 <i class="gg-more-vertical-alt"></i>
               </button>
             </div>
-          
           </div>
-         
-          <nav
-            class="navbar navbar-header  navbar-header-transparent navbar-expand-lg border-bottom"
-          >
+
+          <nav class="navbar navbar-header  navbar-header-transparent navbar-expand-lg border-bottom">
             <div class="container-fluid">
-              <nav
-                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
-              >
-               
-              </nav>
+              <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"></nav>
 
               <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
-                <li
-                  class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
-                >
+                <li class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none">
                   <a
                     class="nav-link dropdown-toggle"
                     data-bs-toggle="dropdown"
@@ -76,7 +64,7 @@ function Snavbar() {
                 <li class="nav-item topbar-icon dropdown hidden-caret">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                     
                     id="messageDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -90,11 +78,11 @@ function Snavbar() {
                     aria-labelledby="messageDropdown"
                   >
                     <li>
-                      <div
-                        class="dropdown-title d-flex justify-content-between align-items-center"
-                      >
+                      <div class="dropdown-title d-flex justify-content-between align-items-center">
                         Messages
-                        <a href="" class="small">Mark all as read</a>
+                        <a href="" class="small">
+                          Mark all as read
+                        </a>
                       </div>
                     </li>
                     <li>
@@ -141,13 +129,12 @@ function Snavbar() {
                               <span class="time">12 minutes ago</span>
                             </div>
                           </a>
-              
                         </div>
                       </div>
                     </li>
                     <li>
-                      <a class="see-all" href="javascript:void(0);"
-                        >See all messages<i class="fa fa-angle-right"></i>
+                      <a class="see-all" href="javascript:void(0);">
+                        See all messages<i class="fa fa-angle-right"></i>
                       </a>
                     </li>
                   </ul>
@@ -224,19 +211,18 @@ function Snavbar() {
                       </div>
                     </li>
                     <li>
-                      <a class="see-all" href="javascript:void(0);"
-                        >See all notifications<i class="fa fa-angle-right"></i>
+                      <a class="see-all" href="javascript:void(0);">
+                        See all notifications<i class="fa fa-angle-right"></i>
                       </a>
                     </li>
                   </ul>
                 </li>
-                
 
                 <li class="nav-item topbar-user dropdown hidden-caret">
                   <a
                     class="dropdown-toggle profile-pic"
                     data-bs-toggle="dropdown"
-                    href="#"
+                     
                     aria-expanded="false"
                   >
                     <div class="avatar-sm">
@@ -251,7 +237,7 @@ function Snavbar() {
                       <span class="fw-bold">Rehman</span>
                     </span>
                   </a>
-                   <ul class="dropdown-menu dropdown-user min-vh-25 animated fadeIn">
+                  <ul class="dropdown-menu dropdown-user min-vh-25 animated fadeIn">
                     <div class="dropdown-user-scroll scrollbar-outer">
                       <li>
                         <div class="user-box">
@@ -265,19 +251,22 @@ function Snavbar() {
                           <div class="u-text">
                             <h4>Rehman</h4>
                             <p class="text-muted">hello@example.com</p>
-                            <a
-                              href=""
-                              class="btns btn-login  btn-view-profile"
-                              onClick={navigatetoprofile}
-                              >View Profile</a
-                            >
+                            <Link to="/Courses/Userprofile">
+                              <a
+                                href=""
+                                class="btns btn-login  btn-view-profile"
+                              >
+                                View Profile
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </li>
                       <li>
-                       
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Logout</a>
+                        <a class="dropdown-item" href="">
+                          Logout
+                        </a>
                       </li>
                     </div>
                   </ul>
@@ -285,13 +274,10 @@ function Snavbar() {
               </ul>
             </div>
           </nav>
-          
-          
         </div>
       </div>
-  
-  </>
-  )
+    </>
+  );
 }
 
-export default Snavbar
+export default Snavbar;

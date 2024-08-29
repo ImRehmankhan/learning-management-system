@@ -1,89 +1,188 @@
-export  const course = [
- 
-    {
-      course_name: "Full-Stack Web Development",
-      description:
-        "Learn to build complete web applications using modern technologies like React and Node.js.",
-      price: 299.99,
+export const courses = [
+  {
+      id: 1,
       post_url: "https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      course_name: "Data Analysis with Python",
-      description:
-        "A comprehensive guide to analyzing data with Python, covering libraries like Pandas and Matplotlib.",
-      price: 149.99,
+      level: "All level",
+      title: "Sketch from A to Z",
+      description: "Proposal indulged no do sociable he throwing settling.",
+      rating: 4.0,
+      duration: "12h 56m",
+      lectures: 15,
+      favorite: false,
+      price: 199.99
+  },
+  {
+      id: 2,
       post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      course_name: "Digital Marketing Masterclass",
-      description:
-        "Master digital marketing strategies, including SEO, content marketing, and social media advertising.",
-      price: 249.99,
+      level: "Beginner",
+      title: "Introduction to JavaScript",
+      description: "JavaScript for beginners and those who want to enhance their skills.",
+      rating: 4.5,
+      duration: "10h 30m",
+      lectures: 20,
+      favorite: true,
+      price: 149.99
+  },
+  {
+      id: 3,
       post_url: "https://images.unsplash.com/photo-1417733403748-83bbc7c05140?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      course_name: "Introduction to Cloud Computing",
-      description:
-        "Learn the fundamentals of cloud computing, including AWS, Azure, and Google Cloud.",
-      price: 199.99,
-      post_url: "https://images.unsplash.com/photo-1516397281156-ca07cf9746fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    
-    {
-        course_name: "Full-Stack Web Development",
-        description:
-          "Learn to build complete web applications using modern technologies like React and Node.js.",
-        price: 299.99,
-        post_url: "https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        course_name: "Data Analysis with Python",
-        description:
-          "A comprehensive guide to analyzing data with Python, covering libraries like Pandas and Matplotlib.",
-        price: 149.99,
-        post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        course_name: "Digital Marketing Masterclass",
-        description:
-          "Master digital marketing strategies, including SEO, content marketing, and social media advertising.",
-        price: 249.99,
-        post_url: "https://images.unsplash.com/photo-1417733403748-83bbc7c05140?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        course_name: "Introduction to Cloud Computing",
-        description:
-          "Learn the fundamentals of cloud computing, including AWS, Azure, and Google Cloud.",
-        price: 199.99,
-        post_url: "https://images.unsplash.com/photo-1516397281156-ca07cf9746fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      }
-      ,
-    {
-        course_name: "Full-Stack Web Development",
-        description:
-          "Learn to build complete web applications using modern technologies like React and Node.js.",
-        price: 299.99,
-        post_url: "https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        course_name: "Data Analysis with Python",
-        description:
-          "A comprehensive guide to analyzing data with Python, covering libraries like Pandas and Matplotlib.",
-        price: 149.99,
-        post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        course_name: "Digital Marketing Masterclass",
-        description:
-          "Master digital marketing strategies, including SEO, content marketing, and social media advertising.",
-        price: 249.99,
-        post_url: "https://images.unsplash.com/photo-1417733403748-83bbc7c05140?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        course_name: "Introduction to Cloud Computing",
-        description:
-          "Learn the fundamentals of cloud computing, including AWS, Azure, and Google Cloud.",
-        price: 199.99,
-        post_url: "https://images.unsplash.com/photo-1516397281156-ca07cf9746fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      }
-  ];
+      level: "Intermediate",
+      title: "Mastering CSS",
+      description: "Learn CSS techniques for building responsive web designs.",
+      rating: 4.8,
+      duration: "8h 45m",
+      lectures: 18,
+      favorite: false,
+      price: 129.99
+  },
+  {
+      id: 4,
+      post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      level: "Advanced",
+      title: "React JS",
+      description: "Deep dive into React JS to create dynamic and interactive web apps.",
+      rating: 4.7,
+      duration: "15h 20m",
+      lectures: 25,
+      favorite: true,
+      price: 249.99
+  },
+  {
+    id: 5,
+    post_url: "https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    level: "All level",
+    title: "Sketch from A to Z",
+    description: "Proposal indulged no do sociable he throwing settling.",
+    rating: 4.0,
+    duration: "12h 56m",
+    lectures: 15,
+    favorite: false,
+    price: 199.99
+},
+{
+    id: 6,
+    post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    level: "Beginner",
+    title: "Introduction to JavaScript",
+    description: "JavaScript for beginners and those who want to enhance their skills.",
+    rating: 4.5,
+    duration: "10h 30m",
+    lectures: 20,
+    favorite: true,
+    price: 149.99
+},
+{
+    id: 7,
+    post_url: "https://images.unsplash.com/photo-1417733403748-83bbc7c05140?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    level: "Intermediate",
+    title: "Mastering CSS",
+    description: "Learn CSS techniques for building responsive web designs.",
+    rating: 4.8,
+    duration: "8h 45m",
+    lectures: 18,
+    favorite: false,
+    price: 129.99
+},
+{
+    id: 8,
+    post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    level: "Advanced",
+    title: "React JS",
+    description: "Deep dive into React JS to create dynamic and interactive web apps.",
+    rating: 4.7,
+    duration: "15h 20m",
+    lectures: 25,
+    favorite: true,
+    price: 249.99
+},
+{
+  id: 9,
+  post_url: "https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  level: "All level",
+  title: "Sketch from A to Z",
+  description: "Proposal indulged no do sociable he throwing settling.",
+  rating: 4.0,
+  duration: "12h 56m",
+  lectures: 15,
+  favorite: false,
+  price: 199.99
+},
+{
+  id: 10,
+  post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  level: "Beginner",
+  title: "Introduction to JavaScript",
+  description: "JavaScript for beginners and those who want to enhance their skills.",
+  rating: 4.5,
+  duration: "10h 30m",
+  lectures: 20,
+  favorite: true,
+  price: 149.99
+},
+{
+  id: 11,
+  post_url: "https://images.unsplash.com/photo-1417733403748-83bbc7c05140?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  level: "Intermediate",
+  title: "Mastering CSS",
+  description: "Learn CSS techniques for building responsive web designs.",
+  rating: 4.8,
+  duration: "8h 45m",
+  lectures: 18,
+  favorite: false,
+  price: 129.99
+},
+{
+  id: 12,
+  post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  level: "Advanced",
+  title: "React JS",
+  description: "Deep dive into React JS to create dynamic and interactive web apps.",
+  rating: 4.7,
+  duration: "15h 20m",
+  lectures: 25,
+  favorite: true,
+  price: 249.99
+},
+ 
+];
+
+
+
+export const categoryData = [
+  { title: "Data Science", image: "https://eduport.webestica.com/assets/images/element/music.svg", courseCount: 15 },
+  { title: "Web Development", image: "https://eduport.webestica.com/assets/images/element/online.svg", courseCount: 22 },
+  { title: "Machine Learning", image: "https://eduport.webestica.com/assets/images/element/coding.svg", courseCount: 10 },
+  { title: "Cyber Security", image: "https://eduport.webestica.com/assets/images/element/artist.svg", courseCount: 8 },
+
+  { title: "Machine Learning", image: "https://eduport.webestica.com/assets/images/element/coding.svg", courseCount: 10 },
+  { title: "Cyber Security", image: "https://eduport.webestica.com/assets/images/element/artist.svg", courseCount: 8 },
+  { title: "Data Science", image: "https://eduport.webestica.com/assets/images/element/music.svg", courseCount: 15 },
+  { title: "Web Development", image: "https://eduport.webestica.com/assets/images/element/online.svg", courseCount: 22 },
+
+
+  { title: "Data Science", image: "https://eduport.webestica.com/assets/images/element/music.svg", courseCount: 15 },
+  { title: "Web Development", image: "https://eduport.webestica.com/assets/images/element/online.svg", courseCount: 22 },
+  { title: "Machine Learning", image: "https://eduport.webestica.com/assets/images/element/coding.svg", courseCount: 10 },
+  { title: "Cyber Security", image: "https://eduport.webestica.com/assets/images/element/artist.svg", courseCount: 8 },
+ 
+
+];
+
+export const mycourses = [
+  {
+      post_url: "https://images.unsplash.com/flagged/1/apple-gear-looking-pretty.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      level: "All level",
+      title: "Sketch from A to Z",
+      description: "Proposal indulged no do sociable he throwing settling.",
+      duration: "12h 56m",
+      lectures: 15,
+  },
+  {
+      post_url: "https://plus.unsplash.com/premium_photo-1664104459156-21e2a06e7173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      level: "Beginner",
+      title: "Introduction to JavaScript",
+      description: "JavaScript for beginners and those who want to enhance their skills.",
+      rating: 4.5,
+      duration: "10h 30m",
+      lectures: 20,
+  }]

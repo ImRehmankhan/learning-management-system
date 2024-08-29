@@ -5,8 +5,8 @@ function HeaderBanner({value}) {
 
     <h1 className="text-light">{value}</h1> 
     <div aria-label="">
-        <span className="text-light"> <a class=" active-link   " aria-current="page" href="#">Home</a>{" "}/{" "}
-        <a class=" text-light" href="#" >{value}</a></span>
+        <span className="text-light"> <a class=" active-link   " aria-current="page"  >Home</a>{" "}/{" "}
+        <a class=" text-light"   >{value}</a></span>
     </div>
   </section>;
 }

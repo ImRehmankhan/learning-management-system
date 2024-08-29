@@ -6,7 +6,7 @@ function Login() {
   const navigate = useNavigate();
   const handleLogin = () => {
   
-    navigate('/dashboard');
+    navigate('Courses/Mycourses');
     
   };
 
@@ -69,10 +69,10 @@ function Login() {
                 </div>
                 <a href="" className="text-decoration-none me-lg-3 me-sm-0">Forgot Password</a>
               </div>
-
-               <button type="button" className="btns btn-login mt-4 "  onClick={handleLogin}>
+             <button type="button" className="btns btn-login mt-4 "  onClick={()=>handleLogin()}>
                 Log In
               </button>
+               
             </form>
             <hr className="my-4" />
             </div>
@@ -81,7 +81,7 @@ function Login() {
 
             <p className="mt-2 text-sm text-center">
               Need an account? 
-              <a href="#" className="text-color font-weight-semibold text-decoration-none ms-1" > 
+              <a   className="text-color font-weight-semibold text-decoration-none ms-1" > 
                <Link to="/Registration">Register</Link> 
               </a>
             </p>

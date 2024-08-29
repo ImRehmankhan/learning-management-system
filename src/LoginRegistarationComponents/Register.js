@@ -84,7 +84,7 @@ function Register({ changeFormHandeler }) {
                   <button
                     type="submit"
                     className="btns btn-login mt-4 fs-5"
-                    onClick={() => changePageHandeler("2")}
+                    onClick={() => navigate('Profile')}
                   >
                     Save & Next
                   </button>

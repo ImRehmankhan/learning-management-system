@@ -1,56 +1,75 @@
 import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter as Router, Route, Routes }from "react-router-dom";
-import {MyContext} from '././ContextApi/Context'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { MyContext } from "././ContextApi/Context";
 import { useState } from "react";
-
 
 import Login from "./LoginRegistarationComponents/Login";
 import RegistrationPage from "./Pages/RegistrationPage";
 import StudentDashboardPage from "./Pages/StudentDashboardPage";
 import CoursesPage from "./Pages/CoursesPage";
-import PaymentPage from './Pages/paymentPage'
 import PageNotFound from "./LoginRegistarationComponents/PageNotFound";
 import ShowProfileDetails from "./UserProfile/ShowProfileDetails";
 import CoursesRegistration from "./CoursesComponents/CoursesRegistration";
-import PaymentForm from "./CoursesComponents/PaymentForm";
-import MyCourses from "./StudentDashboardComponents/MyCourses";
-
-
+import Invoice from "./CoursesComponents/Invoice";
+import MyCourses from "./CoursesComponents/MyCourses";
+import CourseCatagory from "./CoursesComponents/CourseCatagory";
+import RegisterOption from "./LoginRegistarationComponents/RegisterOption";
+import Register from "./LoginRegistarationComponents/Register";
+import Profile from "./LoginRegistarationComponents/Profile";
+import ChallanDetails from "./CoursesComponents/ChallanDetails";
 
 function App() {
-  const [pageName, setPageName] = useState("0");
-  const changePageHandeler = (e) => {
-    setPageName(e);
+
+
+  const [courseDetails, setCourseDetails]=useState([])
+
+  const updateCourseDetails = (e,r) => {
+
+    console.log(e,r)
+  
+    /* setCourseDetails(...courseDetails ,e,r); */
   };
+
+
+  const [courseCount, setCourseCount] = useState(0);
+  const updateCourseCount = (e) => {
+    setCourseCount(e);
+  };
+  const [Courses, setCourses] = useState([]);
+  const addCourses = (e) => {
+   
+    setCourses([...Courses,e]);
+  };
+
   return (
     <>
-   < MyContext.Provider value={ {pageName, changePageHandeler}}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/dashboard" element={<StudentDashboardPage />} />
-          <Route path="/Registration" element={<RegistrationPage />} />
-          <Route path="/Courses" element={ <CoursesPage/>} >
-             <Route index element={ <CoursesRegistration />} />
-             <Route path="payment" element={ <PaymentForm/>} />
+      <MyContext.Provider value={{courseDetails,updateCourseDetails, Courses, addCourses ,courseCount,updateCourseCount}}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Login />} />
 
-          </Route>
+            <Route path="/Registration" element={<RegistrationPage />}>
+              <Route index element={<RegisterOption />} />
+              <Route path="Register" element={<Register />} />
+              <Route path="Register/Profile" element={<Profile />} />
+            </Route>
 
+            <Route path="/Courses" element={<CoursesPage />}>
+              <Route index element={<CoursesRegistration />} />
+              <Route path="Userprofile" element={<ShowProfileDetails />} />
+              <Route path="CourseCatagory" element={<CourseCatagory />} />
+              <Route path="Mycourses" element={<MyCourses />} />
+              <Route path="Invoice" element={<Invoice />} />
+              <Route path="ChallanDetails" element={<ChallanDetails />} />
+              
+            </Route>
 
+            <Route path="/dashboard" element={<StudentDashboardPage />} />
 
-          <Route path="/Mycourses" element={ <MyCourses/>} />
-          
-          <Route path="/Payment" element={ <PaymentPage/>} />
-          <Route path="/Profile" element={ <ShowProfileDetails/>} />
-           <Route path="/*" element={ <PageNotFound/>} />
-        </Routes>
-      </Router>
-
+            <Route path="/*" element={<PageNotFound />} />
+          </Routes>
+        </Router>
       </MyContext.Provider>
-
-      
-      
-
     </>
   );
 }

@@ -1,8 +1,13 @@
 import React from "react";
 import HeaderBanner from "./HeaderBanner";
-import Footer from '../LoginRegistarationComponents/Footer'
 import "./ShowProfileDetails.css";
+import { useNavigate } from "react-router-dom";
 function ShowProfileDetails() {
+  const navigate = useNavigate();
+
+  const dispaychallan = () => {
+    navigate('/Courses/ChallanDetails')
+  };
   return (
     <>
       <HeaderBanner value={"MY Account"} />
@@ -25,15 +30,15 @@ function ShowProfileDetails() {
                 </div>
 
                 <div class="nav-item profile-div">
-                  <a href="" role="tab" class="nav-link profil-text-light">
+                  <a  role="tab" class="nav-link profil-text-light"  onClick={dispaychallan}>
                     <i class="fas fa-file-invoice me-3"></i>My Invoices
                     
                   </a>
                 </div>
                 <div class="nav-item profile-div">
-                  <a href="" role="tab" class="nav-link profil-text-light">
+                  <a  role="tab" class="nav-link profil-text-light" onClick={()=>navigate('/')}>
                     <i class="fas fa-sign-out-alt me-3 "></i>Logout
-                  </a>
+                  </a> 
                 </div>
               </div>
             </div>
@@ -168,7 +173,7 @@ function ShowProfileDetails() {
           </div>
         </div>
       </div>
-      <Footer/>
+     
     </>
   );
 }

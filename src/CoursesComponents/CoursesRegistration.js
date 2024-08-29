@@ -1,67 +1,68 @@
-import React, { useState } from "react";
-import CourseCard from "./CourseCard";
+import React, { useContext, useState } from "react";
+import { courses } from './CourseList';
+import { MyContext } from "../ContextApi/Context";
 
 function CoursesRegistration() {
-  return (
-    <section class="container card-section ">
-     
-        <nav
-          class="navbar  navbar-expand-lg navbar-dark mb-3  "
-          aria-label="Ninth navbar example"
-        >
-          <div class="container-xl  ">
-          <a
-                className="nav-link nav-text-color btn btn-danger text-light   ms-lg-5 "
-                aria-current="page"
-                href=""
-                style={{ "font-size": "20px", "width":"200px" }}
-              >
-                <i className=" fa fa-book "></i>{" "}My Courses
-              </a>
-            <button
-              class="navbar-toggler top-bar2"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarsExample07XL"
-              aria-controls="navbarsExample07XL"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  const { addCourses, updateCourseCount, courseCount } = useContext(MyContext);
+  const [applyClass, setApplyClass] = useState({}); 
 
-            <div class="collapse navbar-collapse ms-5 " id="navbarsExample07XL">
-              <ul class="navbar-nav me-auto mb-2  mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link  nav-text-color fs-5 " href=""> All Courses</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  nav-text-color fs-5" href="">Course Category</a>
-            </li>
-              </ul>
-              <nav class="navbar navbar-header-left text-dark navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
-                <div class="input-group  ">
-                  <div class="input-group-prepend">
-                    <button type="submit" class="btn btn-search pe-1">
-                      <i class="fa fa-search "></i>
-                    </button>
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Search ..."
-                    className="input-text-color "
-                  />
+  const addCourseToCart = (selectedCourse) => {
+    console.log(selectedCourse)
+    addCourses(selectedCourse);
+    updateCourseCount(courseCount + 1);
+    setApplyClass((prevState) => ({
+      ...prevState,
+      [selectedCourse.id]: "opacity-25" 
+    }));
+  };
+
+  return (
+    <section className="container card-section">
+      <h2 className="fs-1 text-center mb-auto">Most Popular Courses</h2>
+      <p className="text-center mb-4">
+        Choose from hundreds of courses from specialist organizations
+      </p>
+
+      <div className="row g-4 marginonsmallscree">
+        {courses.map((e, index) => (
+          <div className="col-sm-6 col-lg-4 col-xl-3" key={index}>
+            <div className="card shadow">
+          
+              <img src={e.post_url} className="card-img-top" alt="course image" />
+             
+              <div className="ps-3 pt-2">
+                <div className="d-flex me-3 mb-2">
+                  <a className="badge bg-info text-dark">{e.level}</a>
                 </div>
-              </nav>
+            
+                <h5 className="card-title fw-normal">{e.title}</h5>
+                <p className="mb-2 text-truncate-2">{e.description}</p>
+              
+                <div>
+                  <h4 className="text-danger fs-5 mb-0 ">${e.price}</h4>
+                  <button 
+                    className={`btn btn-md btn-success-soft bg-success text-light mt-2 item-show-hover ${applyClass[e.id] || ''}`} 
+                    onClick={() => addCourseToCart(e)}
+                  >
+                    <i className="fas fa-shopping-cart me-2"></i>Add to cart
+                  </button>
+                </div>
+              </div>
+            
+              <div className="card-footer pt-0 pb-3">
+                <hr />
+                <div className="d-flex justify-content-between">
+                  <span className="h6 fw-light mb-0">
+                    <i className="far fa-clock text-danger me-2"></i>{e.duration}
+                  </span>
+                  <span className="h6 fw-light mb-0">
+                    <i className="fas fa-table text-orange me-2"></i>{e.lectures} lectures
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
-        <h1 style={{ "text-align": "center" }} >
-      We Do What We Love To Do.</h1>
-      <h2 style={{ "text-align": "center" }} className="mb-5">Find the Best Course To Fit Your Needs.</h2> 
-    
-      <div class="row d-flex align-items-stratch justify-content-center marginonsmallscree">
-        {<CourseCard />}
+        ))}
       </div>
     </section>
   );

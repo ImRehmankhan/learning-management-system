@@ -62,7 +62,7 @@ function Footer() {
             <div class="col-md-6 text-center text-md-start py-1">
               <p class="m-0 text-white text-opacity-75">
                 © 2024 copyright by{" "}
-                <a class="text-reset" href="#">
+                <a class="text-reset"  >
                   ItSolera
                 </a>
               </p>
@@ -70,17 +70,17 @@ function Footer() {
             <div class="col-md-6 text-center text-md-end py-1">
               <ul class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0">
                 <li class="p-0 mx-3 ms-md-0 me-md-3">
-                  <a href="#" class="text-white text-opacity-75">
+                  <a   class="text-white text-opacity-75">
                     Privace &amp; Policy
                   </a>
                 </li>
                 <li class="p-0 mx-3 ms-md-0 me-md-3">
-                  <a href="#" class="text-white text-opacity-75">
+                  <a   class="text-white text-opacity-75">
                     Faq's
                   </a>
                 </li>
                 <li class="p-0 mx-3 ms-md-0 me-md-3">
-                  <a href="#" class="text-white text-opacity-75">
+                  <a   class="text-white text-opacity-75">
                     Get a Quote
                   </a>
                 </li>

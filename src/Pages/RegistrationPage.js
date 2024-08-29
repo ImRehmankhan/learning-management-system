@@ -6,6 +6,7 @@ import Profile from "../LoginRegistarationComponents/Profile";
 import { MyContext } from "../ContextApi/Context";
 import Footer from "../LoginRegistarationComponents/Footer";
 import RegisterOption from "../LoginRegistarationComponents/RegisterOption";
+import { Outlet } from "react-router-dom";
 
 function RegistrationPage() {
   const { pageName } = useContext(MyContext);
@@ -13,13 +14,7 @@ function RegistrationPage() {
     <>
       <Head />
       <Navbar />
-      {pageName === "0" ? (
-        <RegisterOption />
-      ) : pageName === "1" ? (
-        <Register />
-      ) : (
-        <Profile />
-      )}
+      <Outlet/>
       <Footer />
     </>
   );

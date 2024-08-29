@@ -1,24 +1,22 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-
-
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { MyContext } from "../ContextApi/Context";
 function Optionbar() {
-  const navigate=useNavigate()
+  const { Courses,courseCount } = useContext(MyContext);
+  const navigate = useNavigate();
+  const handlePayment = (courseDetails) => {
+    navigate('Invoice', { state: { courseDetails } });
+  };
+  
   return (
     <nav
-      className="navbar navbar-registration navbar-expand-lg navbar-dark bg-light d-flex align-item-center justify-content-center"
+      class="navbar  navbar-expand-lg navbar-dark   "
       aria-label="Ninth navbar example"
     >
-      <div className="container-xl">
-        <img
-          width="150"
-          src="https://itsolera.com/wp-content/uploads/2024/05/IT-Solera-LOGO.png"
-          className="attachment-large size-large wp-image-238"
-          alt=""
-          decoding="async"
-        />
+      <div class="container-xl  ">
+      <i class="ms-2 fa shoping-badge fa-lg fs-1 cursor-pointer" value={courseCount} onClick={()=>handlePayment(Courses)}> &#xf07a;</i>
         <button
-          className="navbar-toggler top-bar2"
+          class="navbar-toggler top-bar2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarsExample07XL"
@@ -26,22 +24,48 @@ function Optionbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse ms-5" id="navbarsExample07XL">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0  d-lg-flex align-items-lg-center justify-content-lg-end w-100">
-            <li className="nav-item">
-            <a
-                className="nav-link nav-text-color   ms-lg-5 "
-                aria-current="page"
-                href=""
-                style={{ "font-size": "20px", "width":"200px" }}
-                onClick={()=>navigate('/Mycourses')}
-              >
-                <i className=" fa fa-book fs-4 "></i>{" "}My Courses
+
+        <div class="collapse navbar-collapse ms-5 " id="navbarsExample07XL">
+          <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+            <li class="nav-item">
+              <Link to="/courses">
+                <a class="nav-link  nav-text-color fs-5" >
+                  All Courses
+                </a>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="CourseCatagory">
+                <a class="nav-link  nav-text-color fs-5" >
+                  Course Category
+                </a>
+              </Link>
+            </li>
+            <li class="nav-item">
+            <Link to="Mycourses">
+            <a class="nav-link  nav-text-color fs-5" >
+             My Courses
               </a>
+            </Link>
             </li>
           </ul>
+
+          <nav class="navbar navbar-header-left text-dark navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+            <div class="input-group  ">
+              <div class="input-group-prepend">
+                <button type="submit" class="btn btn-search pe-1">
+                  <i class="fa fa-search "></i>
+                </button>
+              </div>
+              <input
+                type="text"
+                placeholder="Search ..."
+                className="input-text-color "
+              />
+            </div>
+          </nav>
         </div>
       </div>
     </nav>

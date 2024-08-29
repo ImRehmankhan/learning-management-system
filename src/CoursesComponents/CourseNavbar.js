@@ -1,14 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
  
   const navigate = useNavigate();
-  const  navigatetoprofile = () => {
-  
-   ;
-    
-  };
+
   return (
     <nav class="navbar navbar-header course-navbar-header course-nav-bg navbar-header-transparent navbar-expand-lg border-bottom">
     <div class="container ">
@@ -19,7 +15,7 @@ function Navbar() {
         <li class="nav-item topbar-icon dropdown hidden-caret">
           <a
             class="nav-link dropdown-toggle"
-            href="#"
+             
             id="messageDropdown"
             role="button"
             data-bs-toggle="dropdown"
@@ -155,11 +151,11 @@ function Navbar() {
           </ul>
         </li>
 
-        <li class="nav-item topbar-user dropdown hidden-caret">
+        <li class="nav-item topbar-user dropdown hidden-caret cursor-pointer">
           <a
             class="dropdown-toggle profile-pic"
             data-bs-toggle="dropdown"
-            href="#"
+             
             aria-expanded="false"
           >
             <div class="avatar-sm">
@@ -188,9 +184,9 @@ function Navbar() {
                   <div class="u-text">
                     <h4>Rehman</h4>
                     <p class="text-muted">hello@example.com</p>
-                    <a href="" class="btns btn-login  btn-view-profile" onClick={navigatetoprofile}>
+                    <Link to="Userprofile"><a href="" class="btns btn-login  btn-view-profile" >
                       View Profile
-                    </a>
+                    </a></Link> 
                   </div>
                 </div>
               </li>
