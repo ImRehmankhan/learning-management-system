@@ -12,11 +12,11 @@
     color: white;
 }
 .profile-div:hover{
-    background-color: rgba(109, 2, 2, 0.772);
+    background-color: rgba(162, 3, 35, 1);
 
 }
 .active-tab{
-    background-color: rgba(109, 2, 2, 0.772);
+    background-color: rgba(162, 3, 35, 1);
     color: white;
 }
 

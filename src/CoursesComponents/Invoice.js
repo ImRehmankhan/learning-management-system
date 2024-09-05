@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Payment.css";
-import HeaderBanner from "../UserProfile/HeaderBanner";
-
+import HeaderBanner from "../UserProfile/HeaderBanner"
 import { useLocation, Link, useNavigate } from "react-router-dom";
 function Invoice() {
-
   const location = useLocation();
   const { courseDetails } = location.state || {};
   const navigate = useNavigate();
   const totalprice = courseDetails.reduce((acc, course) => acc + course.price, 0);
+  
   const dispaychallan = () => {
-    navigate('/Courses/ChallanDetails', { state: { courseDetails,totalprice } });
+    navigate('/Courses/ChallanDetails');
   };
   return (
     <>
@@ -29,9 +28,10 @@ function Invoice() {
                 </tr>
               </thead>
               <tbody>
+
                 {courseDetails.map((e, index) => (
                   <tr>
-                    <td>{e.id}</td>
+                    <td>{index+1}</td>
                     <td>{e.title}</td>
                     <td>${e.price}</td>
                   </tr>

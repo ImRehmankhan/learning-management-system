@@ -20,17 +20,6 @@ import ChallanDetails from "./CoursesComponents/ChallanDetails";
 
 function App() {
 
-
-  const [courseDetails, setCourseDetails]=useState([])
-
-  const updateCourseDetails = (e,r) => {
-
-    console.log(e,r)
-  
-    /* setCourseDetails(...courseDetails ,e,r); */
-  };
-
-
   const [courseCount, setCourseCount] = useState(0);
   const updateCourseCount = (e) => {
     setCourseCount(e);
@@ -43,7 +32,7 @@ function App() {
 
   return (
     <>
-      <MyContext.Provider value={{courseDetails,updateCourseDetails, Courses, addCourses ,courseCount,updateCourseCount}}>
+      <MyContext.Provider value={{ Courses, addCourses ,courseCount,updateCourseCount}}>
         <Router>
           <Routes>
             <Route path="/" element={<Login />} />

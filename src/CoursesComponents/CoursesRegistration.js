@@ -7,7 +7,6 @@ function CoursesRegistration() {
   const [applyClass, setApplyClass] = useState({}); 
 
   const addCourseToCart = (selectedCourse) => {
-    console.log(selectedCourse)
     addCourses(selectedCourse);
     updateCourseCount(courseCount + 1);
     setApplyClass((prevState) => ({

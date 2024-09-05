@@ -1,15 +1,19 @@
-import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import HeaderBanner from "../UserProfile/HeaderBanner";
+import { MyContext } from "../ContextApi/Context";
 
 function ChallanDetails() {
-  const location = useLocation();
-  const { courseDetails,totalprice} = location.state || {};
+  const {Courses } = useContext(MyContext);
+
+  const totalprice = Courses.reduce((acc, course) => acc + course.price, 0);
+
+
+
+  
   return (
     <> <HeaderBanner value={"My Invoice"} />
     <section className="invoice-area" id="invoicearea">
-         {console.log ("course destao")}
-        {console.log(courseDetails)}
       <div className="container">
         <div className="row">
           <div className="col-lg-12 col-md-12">
@@ -54,18 +58,17 @@ function ChallanDetails() {
 
                     <td>
                       {" "}
-                      <i className="fas fa-dollar-sign"></i>
-                   {totalprice}
+                      <i className="fas fa-dollar-sign"></i> 
+                      {totalprice}
                     </td>
 
                     <td>
-                      {courseDetails.map((e, index) => (
-                        <span className="badge badge-success mr-2" key={index}>
-                          {e.title}
-                        </span>
-                      ))}
-                    </td>
-
+                        {Courses.map((e, index) => (
+                          <span className="badge badge-success mr-2" key={index}>
+                            {e.title}
+                          </span>
+                        ))}
+                      </td>
                     <td>
                       <span className="badge badge-danger text-light">
                         Unpaid

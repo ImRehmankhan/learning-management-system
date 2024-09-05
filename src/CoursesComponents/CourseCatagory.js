@@ -1,5 +1,6 @@
 import React from 'react'
 import {categoryData} from './CourseList'
+import {Link} from 'react-router-dom'
 function CourseCatagory() {
   return (
     <section>
@@ -20,23 +21,14 @@ function CourseCatagory() {
                         <img src={e.image} alt="" />
                       </div>
                       <h5 className="mb-2">
-                        <a  className="stretched-link">
+                       <Link to='/Courses'><a  className="stretched-link" >
                           {e.title}
-                        </a>
+                        </a></Link> 
                       </h5>
                       <h6 className="mb-0">{e.courseCount} Courses</h6>
                     </div>
                   </div>
       ))}
-
-
-
-
-
-
-
-
-
 
       </div>
     </div>
