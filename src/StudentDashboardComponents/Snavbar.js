@@ -7,7 +7,7 @@ function Snavbar() {
 
   return (
     <>
-      <div class="main-panel">
+      
         <div class="main-header ">
           <div class="main-header-logo">
             <div class="logo-header" data-background-color="dark">
@@ -218,7 +218,7 @@ function Snavbar() {
                   </ul>
                 </li>
 
-                <li class="nav-item topbar-user dropdown hidden-caret">
+                <li class="nav-item topbar-user dropdown  cursor-pointer hidden-caret">
                   <a
                     class="dropdown-toggle profile-pic"
                     data-bs-toggle="dropdown"
@@ -275,7 +275,7 @@ function Snavbar() {
             </div>
           </nav>
         </div>
-      </div>
+     
     </>
   );
 }

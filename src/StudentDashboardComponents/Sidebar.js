@@ -1,6 +1,44 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
+  const navigate = useNavigate();
+  const NavigattoDashboard = () => {
+    navigate('/dashboard');
+  };
+
+  const NavigattoVideos = () => {
+    navigate('Videos');
+  };
+  const NavigattoZoomSession = () => {
+    navigate('ZoomSession');
+  };
+
+  const NavigattoQuiz = () => {
+    navigate('Quiz');
+  };
+
+  const NavigattoAssignmnet = () => {
+    navigate('Assignments');
+  };
+  const NavigattoProject = () => {
+    navigate('Projects');
+  };
+  const NavigattoResults = () => {
+    navigate('Results');
+  };
+  const NavigattoCertification = () => {
+    navigate('Certification');
+  };
+  const NavigattoComunity = () => {
+    navigate('Comunity');
+  };
+
+
+
+
+
+
   return (
     <>
       <div className="sidebar" data-background-color="light">
@@ -32,8 +70,8 @@ function Sidebar() {
         <div className="sidebar-wrapper scrollbar scrollbar-inner">
           <div className="sidebar-content">
             <ul className="nav nav-secondary   cursor-pointer">
-              <li className="nav-item active ">
-                <a  ><i className="fas fa-home"></i><p className=''>Dashboard</p></a>
+              <li className="nav-item  active"onClick={NavigattoDashboard}>
+                <a  ><i className="fas fa-home " ></i><p className=''>Dashboard</p></a>
               </li>
               <li className="nav-item ">
                 <a  ><i className="fas fa-calendar"></i><p>Calendar</p></a>
@@ -50,28 +88,28 @@ function Sidebar() {
               <li className="nav-item " >
                 <a  ><p className='fw-bold'>Class Activity</p></a>
               </li>
-              <li className="nav-item ">
-                <a  ><i className="fas fa-video "></i><p>Pre Recorded</p></a>
+              <li className="nav-item " onClick={NavigattoVideos}>
+                <a  ><i className="fas fa-video " ></i><p>Pre Recorded</p></a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item " onClick={NavigattoZoomSession}>
                 <a  ><i className="fas fa-video "></i><p>Zoom Sessions</p></a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item " onClick={NavigattoQuiz}>
                 <a  ><i className="fas fa-pencil-alt "></i><p>Week Quiz</p></a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item " onClick={NavigattoAssignmnet}>
                 <a  ><i className="fas fa-clipboard-list "></i><p>Assignments</p></a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item " onClick={NavigattoProject}>
                 <a  ><i className="fas fa-briefcase "></i><p>Projects</p></a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item " onClick={NavigattoResults}>
                 <a  ><i className="fas  fa-chart-line "></i><p>Results</p></a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item " onClick={NavigattoCertification}>
                 <a  ><i className="fas fa-graduation-cap "></i><p>Certificate</p></a>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item " onClick={NavigattoComunity}>
                 <a  ><i className="fas fa-comments"></i><p>Itsolera Comunity</p></a>
               </li>
             </ul>
