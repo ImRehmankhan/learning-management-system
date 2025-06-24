@@ -58,30 +58,6 @@ learning-management-system/
 ├── .gitignore
 └── README.md
 
----
-
-## 📸 Screenshots
-
-> *(You can upload screenshots to a `screenshots/` folder in your repo and embed them like this:)*
-
----
-
-## 📦 Installation & Setup
-
-To run this project locally:
-
-```bash
-# Clone the repo
-git clone https://github.com/ImRehmankhan/learning-management-system
-
-# Move into the project directory
-cd learning-management-system
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
 📌 Purpose & Learning Outcomes
 This LMS was built to:
 
@@ -105,4 +81,22 @@ If you like this project, give it a ⭐!
 Want to collaborate or suggest improvements? Feel free to fork or open an issue!
 
 <p align="center"> Thanks for checking it out! 🙌 <br/> Built with ❤️ by Muhammad Rehman </p> ```
+
+## 📦 Installation & Setup
+
+To run this project locally:
+
+```bash
+# Clone the repo
+git clone https://github.com/ImRehmankhan/learning-management-system
+
+# Move into the project directory
+cd learning-management-system
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
 
