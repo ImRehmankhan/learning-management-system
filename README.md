@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<h1 align="center">🎓 Learning Management System (LMS)</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <b>React.js | REST APIs | Bootstrap</b>  
+  <br/>
+  Developed during Internship at <b>ItSolera PVT LTD</b>
+</p>
 
-## Available Scripts
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Frontend-React.js-blue?style=flat-square&logo=react" />
+  <img src="https://img.shields.io/badge/UI-Bootstrap-purple?style=flat-square&logo=bootstrap" />
+  <img src="https://img.shields.io/badge/API-REST--ful-orange?style=flat-square" />
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A modern, responsive **Learning Management System (LMS)** built with **React.js** to handle student learning operations like **course management**, **attendance**, and **assignment tracking**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> This project was created during my internship at *ItSolera* as a demonstration of practical frontend engineering, UI/UX collaboration, and API integration.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧩 Features
 
-### `npm run build`
+- 🔐 Student login & registration
+- 📚 Course listing & enrollment
+- ✅ Attendance tracking
+- 📝 Assignment uploads & management
+- ⚙️ Admin/instructor dashboard
+- 📱 Fully responsive design using Bootstrap
+- 🔌 API-powered data flow via REST endpoints
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Category       | Technologies                             |
+|----------------|------------------------------------------|
+| **Frontend**   | React.js, JavaScript, Bootstrap           |
+| **API**        | RESTful APIs                              |
+| **Tools**      | Git, GitHub, VS Code                      |
+| **UI Design**  | Responsive Layout, Form Validation        |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🗂 Suggested Folder Structure
+learning-management-system/
+├── public/
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── api/
+│ └── App.js
+├── package.json
+├── .gitignore
+└── README.md
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📸 Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> *(You can upload screenshots to a `screenshots/` folder in your repo and embed them like this:)*
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Installation & Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run this project locally:
 
-### Code Splitting
+```bash
+# Clone the repo
+git clone https://github.com/ImRehmankhan/learning-management-system
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Move into the project directory
+cd learning-management-system
 
-### Analyzing the Bundle Size
+# Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Start the development server
+npm start
+📌 Purpose & Learning Outcomes
+This LMS was built to:
 
-### Making a Progressive Web App
+Apply real-world frontend development concepts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Translate UI mockups into live, responsive code
 
-### Advanced Configuration
+Integrate third-party APIs and manage frontend data efficiently
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Improve component reusability and code organization
 
-### Deployment
+🙋‍♂️ Author
+Muhammad Rehman
+Frontend Developer (React.js & React Native)
+📧 rehmanattock30@gmail.com
+🔗 Portfolio
+🔗 LinkedIn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+⭐ Support & Contribution
+If you like this project, give it a ⭐!
+Want to collaborate or suggest improvements? Feel free to fork or open an issue!
 
-### `npm run build` fails to minify
+<p align="center"> Thanks for checking it out! 🙌 <br/> Built with ❤️ by Muhammad Rehman </p> ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
