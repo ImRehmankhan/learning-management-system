@@ -69,18 +69,6 @@ Integrate third-party APIs and manage frontend data efficiently
 
 Improve component reusability and code organization
 
-🙋‍♂️ Author
-Muhammad Rehman
-Frontend Developer (React.js & React Native)
-📧 rehmanattock30@gmail.com
-🔗 Portfolio
-🔗 LinkedIn
-
-⭐ Support & Contribution
-If you like this project, give it a ⭐!
-Want to collaborate or suggest improvements? Feel free to fork or open an issue!
-
-<p align="center"> Thanks for checking it out! 🙌 <br/> Built with ❤️ by Muhammad Rehman </p> ```
 
 ## 📦 Installation & Setup
 
@@ -98,5 +86,28 @@ npm install
 
 # Start the development server
 npm start
+The app will run on http://localhost:3000
+```
+📌 Purpose & Learning Outcomes
+This LMS was built to:
 
+Apply real-world frontend development concepts
 
+Translate UI mockups into live, responsive code
+
+Integrate third-party APIs and manage frontend data efficiently
+
+Improve component reusability and code organization
+
+🙋‍♂️ Author
+Muhammad Rehman
+Frontend Developer (React.js & React Native)
+📧 rehmanattock30@gmail.com
+🔗 Portfolio
+🔗 LinkedIn
+
+⭐ Support & Contribution
+If you like this project, give it a ⭐!
+Want to collaborate or suggest improvements? Feel free to fork or open an issue!
+
+<p align="center"> Thanks for checking it out! 🙌 <br/> Built with ❤️ by Muhammad Rehman </p> ```
